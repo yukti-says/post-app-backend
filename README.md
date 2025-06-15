@@ -60,8 +60,7 @@ PostApp/
 ├── package.json
 └── README.md
 
-markdown
-Copy code
+
 
 ---
 
@@ -116,15 +115,11 @@ nodemon app.js
 The server will run at http://localhost:3000
 
 ## 🌟 What I Learned
-Setting up backend apps from scratch
-
-RESTful routing and middleware
-
-Password hashing with bcrypt
-
-Using MongoDB with Mongoose
-
-Writing cleaner, modular backend code
+# Setting up backend apps from scratch
+# RESTful routing and middleware
+# Password hashing with bcrypt
+# Using MongoDB with Mongoose
+# Writing cleaner, modular backend code
 
 ## 📢 Let's Connect!
 Feel free to connect or message me on LinkedIn

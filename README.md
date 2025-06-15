@@ -102,4 +102,4 @@ I'll be sharing more of my learning journey, especially in backend, web dev, and
 Thanks to the online dev community, YouTube, and documentation that helped me build and debug this project! 💙
 
 “Do whatever you want, but I feel like sometimes destiny wins; what's written, that happens.”
-— Yukti Sah
+— Yukti Sahu

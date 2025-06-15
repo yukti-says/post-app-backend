@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | Post App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-zinc-900 text-white flex items-center justify-center min-h-screen">
+  <div class="w-full max-w-md p-6 bg-zinc-800 rounded-lg shadow">
+    <h2 class="text-3xl font-bold mb-4 text-center">Login to Your Account</h2>
+    <form action="/login" method="post" class="space-y-3">
+      <input type="email" name="email" placeholder="Email" class="w-full p-2 rounded bg-transparent border border-zinc-600" required>
+      <input type="password" name="password" placeholder="Password" class="w-full p-2 rounded bg-transparent border border-zinc-600" required>
+      <input type="submit" value="Login" class="w-full p-2 bg-blue-600 hover:bg-blue-800 rounded text-white font-semibold">
+    </form>
+    <p class="mt-4 text-center text-sm">Don't have an account? <a href="/" class="text-blue-400 underline">Register here</a></p>
+  </div>
+</body>
+</html>

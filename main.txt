@@ -1,0 +1,6 @@
+creating a basic app where user can write posts
+>create users
+>login and registration and logout
+>post creation
+>post like
+>post delete will be seen to who has posted not the other who are seeing that post

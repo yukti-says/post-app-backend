@@ -33,35 +33,6 @@ To **understand the backend flow** from server creation to authentication and da
 - Connecting frontend forms with backend logic
 - Persistent storage with MongoDB
 
----
-
-## 📂 Folder Structure
-
-PostApp/
-│
-├── models/ # MongoDB Mongoose models
-│ └── user.js
-│ └── post.js
-│
-├── routes/ # Express routes
-│ └── auth.js
-│ └── user.js
-│ └── post.js
-│
-├── views/ # EJS templates
-│ └── index.ejs
-│ └── login.ejs
-│ └── profile.ejs
-│ └── feed.ejs
-│
-├── public/ # Static files (images, css)
-│
-├── app.js # Main server entry
-├── package.json
-└── README.md
-
-markdown
-Copy code
 
 ---
 
@@ -116,15 +87,11 @@ nodemon app.js
 The server will run at http://localhost:3000
 
 ## 🌟 What I Learned
-Setting up backend apps from scratch
-
-RESTful routing and middleware
-
-Password hashing with bcrypt
-
-Using MongoDB with Mongoose
-
-Writing cleaner, modular backend code
+ Setting up backend apps from scratch
+ RESTful routing and middleware
+ Password hashing with bcrypt
+ Using MongoDB with Mongoose
+ Writing cleaner, modular backend code
 
 ## 📢 Let's Connect!
 Feel free to connect or message me on LinkedIn
@@ -135,4 +102,4 @@ I'll be sharing more of my learning journey, especially in backend, web dev, and
 Thanks to the online dev community, YouTube, and documentation that helped me build and debug this project! 💙
 
 “Do whatever you want, but I feel like sometimes destiny wins; what's written, that happens.”
-— Yukti Sah
+— Yukti Sahu

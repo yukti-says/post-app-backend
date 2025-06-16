@@ -221,6 +221,10 @@ mongoose
   });
 
 // Routes
+app.get("/", (req, res) => {
+  res.send("✅ Welcome to the Post App Backend. Server is running securely.");
+});
+
 app.use("/", require("./routes/auth"));
 app.use("/", require("./routes/user"));
 app.use("/", require("./routes/post"));

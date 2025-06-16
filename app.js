@@ -181,6 +181,8 @@
 //   console.log("server started at 3000 port");
 // });
 
+// Load environment variables first
+require("dotenv").config();
 
 const express = require("express");
 const mongoose = require("mongoose");
@@ -190,7 +192,7 @@ const path = require("path");
 
 const app = express();
 
-// Set view engine
+// Set EJS as the view engine
 app.set("view engine", "ejs");
 
 // Middleware
@@ -199,30 +201,32 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(
   session({
-    secret: "secret",
+    secret: process.env.SESSION_SECRET || "fallbackSecret",
     resave: false,
     saveUninitialized: false,
   })
 );
 
-// app.use(passport.initialize());
-// app.use(passport.session());
-
-
-// Serve static files (profile images)
+// Serve static files
 app.use("/images", express.static(path.join(__dirname, "public/images")));
 
-// MongoDB connection
+// MongoDB Atlas connection
 mongoose
-  .connect("mongodb://localhost:27017/postApp")
-  .then(() => console.log("MongoDB connected"))
-  .catch((err) => console.log(err));
+  .connect(process.env.MONGODB_URI)
+  .then(() => {
+    console.log("✅ MongoDB Atlas connected successfully");
+  })
+  .catch((err) => {
+    console.error("❌ MongoDB Atlas connection error:", err);
+  });
 
 // Routes
 app.use("/", require("./routes/auth"));
 app.use("/", require("./routes/user"));
 app.use("/", require("./routes/post"));
 
-
 // Start server
-app.listen(3000, () => console.log("Server running at 3000"));
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`🚀 Server running on port ${PORT}`);
+});
